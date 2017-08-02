@@ -63,7 +63,7 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         app:layout_constraintVertical_bias="0.017" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/etPassword"
         android:layout_width="339dp"
         android:layout_height="39dp"
         android:layout_marginBottom="8dp"
@@ -81,7 +81,7 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         app:layout_constraintVertical_bias="0.994" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/etName"
         android:layout_width="339dp"
         android:layout_height="39dp"
         android:layout_marginBottom="8dp"
@@ -91,7 +91,7 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
