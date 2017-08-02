@@ -7,7 +7,7 @@ android:layout_height="match_parent"
 tools:context="com.dumbaz.skatespot.RegisterActivity">
 
     <EditText
-        android:id="@+id/Paasword"
+        android:id="@+id/etPassword"
         android:layout_width="339dp"
         android:layout_height="39dp"
         android:layout_marginBottom="8dp"
@@ -17,7 +17,7 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
@@ -27,7 +27,7 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         app:layout_constraintVertical_bias="0.267" />
 
     <EditText
-        android:id="@+id/Email"
+        android:id="@+id/etEmail"
         android:layout_width="339dp"
         android:layout_height="39dp"
         android:layout_marginBottom="8dp"
@@ -37,13 +37,13 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Paasword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -54,16 +54,16 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:text="REGISTER"
+        android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
         app:layout_constraintVertical_bias="0.017" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etUsername"
         android:layout_width="339dp"
         android:layout_height="39dp"
         android:layout_marginBottom="8dp"
@@ -71,9 +71,9 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Paasword"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -89,9 +89,9 @@ tools:context="com.dumbaz.skatespot.RegisterActivity">
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="@string/name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etUsername"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
