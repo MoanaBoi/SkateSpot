@@ -4,106 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dumbaz.skatespot.MainActivity">
-
-    <Button
-        android:id="@+id/settingsButton"
-        android:layout_width="82dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/userMenu"
-        app:layout_constraintHorizontal_bias="0.969"
-        app:layout_constraintLeft_toLeftOf="@+id/userMenu"
-        app:layout_constraintRight_toRightOf="@+id/userMenu"
-        app:layout_constraintTop_toTopOf="@+id/userMenu"
-        app:layout_constraintVertical_bias="0.0" />
+    tools:context="com.dumbaz.skatespot.SettingsActivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="0dp"
-        android:text="@string/emailTitle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeMessage"
-        app:layout_constraintVertical_bias="0.163" />
-
-    <TextView
-        android:id="@+id/WelcomeMessage"
-        android:layout_width="372dp"
-        android:layout_height="65dp"
+        android:id="@+id/settingsTitle"
+        android:layout_width="264dp"
+        android:layout_height="59dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/welcomemessage"
+        android:text="@string/settingsTitle"
         android:textAppearance="@style/TextAppearance.AppCompat.Menu"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="0dp"
-        android:text="@string/username"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.013"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeMessage"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/etUsername"
-        android:layout_width="256dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/textview"
-        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeMessage"
-        app:layout_constraintVertical_bias="0.043" />
-
-    <TextView
-        android:id="@+id/etEmail"
-        android:layout_width="256dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/textview"
-        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.016" />
 
     <SurfaceView
         android:id="@+id/userMenu"
@@ -187,4 +106,18 @@
         app:layout_constraintTop_toTopOf="@+id/userMenu"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="82dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userMenu"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintLeft_toLeftOf="@+id/userMenu"
+        app:layout_constraintRight_toRightOf="@+id/userMenu"
+        app:layout_constraintTop_toTopOf="@+id/userMenu"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>

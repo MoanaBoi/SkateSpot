@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final String username = etUsername.getText().toString();
-                final String password = etPassword.getText().toString();
+                String password = etPassword.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -77,7 +77,8 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 };
-
+                HashMD5 hash = new HashMD5(password);
+                password = hash.getHashPassword();
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
