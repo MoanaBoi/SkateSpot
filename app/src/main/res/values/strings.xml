@@ -6,4 +6,8 @@
     <string name="password">Password</string>
     <string name="register">REGISTER</string>
     <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="map">Map</string>
+    <string name="no_account_register">No account ? Register</string>
+    <string name="passwordloginactivity">Password</string>
 </resources>
