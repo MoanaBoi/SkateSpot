@@ -46,10 +46,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.moveCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition(new LatLng(48.1119800,  -1.6742900), 14, 45, 0)));
         g = new GPSTracker(getApplicationContext());
         l = g.getLocation();
         me = new LatLng(l.getLatitude(), l.getLongitude());
+        mMap.moveCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition(me, 14, 45, 0)));
+        mMap.setPadding(0, 0, 0, 1720);
     }
 
     public void addMarker() {

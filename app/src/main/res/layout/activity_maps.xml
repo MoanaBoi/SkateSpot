@@ -1,5 +1,6 @@
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/map"
     android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -15,4 +16,101 @@
         android:padding="10dp"
         android:layout_marginTop="20dp"
         android:paddingRight="10dp"/>
+
+    <SurfaceView
+        android:id="@+id/userMenu"
+        android:layout_width="360dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/userPage"
+        android:layout_width="59dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userMenu"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintLeft_toLeftOf="@+id/userMenu"
+        app:layout_constraintRight_toRightOf="@+id/userMenu"
+        app:layout_constraintTop_toTopOf="@+id/userMenu"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image_user"
+        tools:layout_editor_absoluteY="513dp"
+        android:contentDescription="" />
+
+    <ImageView
+        android:id="@+id/mapPage"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userMenu"
+        app:layout_constraintLeft_toLeftOf="@+id/userMenu"
+        app:layout_constraintRight_toRightOf="@+id/userMenu"
+        app:layout_constraintTop_toTopOf="@+id/userMenu"
+        app:srcCompat="@drawable/image_map"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="510dp"
+        android:contentDescription="" />
+
+    <ImageView
+        android:id="@+id/settingsPage"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userMenu"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintLeft_toLeftOf="@+id/userMenu"
+        app:layout_constraintRight_toRightOf="@+id/userMenu"
+        app:layout_constraintTop_toTopOf="@+id/userMenu"
+        app:layout_constraintVertical_bias="0.875"
+        app:srcCompat="@drawable/gear"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="82dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userMenu"
+        app:layout_constraintLeft_toLeftOf="@+id/userMenu"
+        app:layout_constraintRight_toRightOf="@+id/userMenu"
+        app:layout_constraintTop_toTopOf="@+id/userMenu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="82dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userMenu"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintLeft_toLeftOf="@+id/userMenu"
+        app:layout_constraintRight_toRightOf="@+id/userMenu"
+        app:layout_constraintTop_toTopOf="@+id/userMenu"
+        app:layout_constraintVertical_bias="0.0" />
     </fragment>
